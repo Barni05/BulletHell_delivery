@@ -1,8 +1,8 @@
-there is/should be a game called Bullet Hell, in which you very violently murder your best friend in a local multiplayer platformer game.
-i am trying new things here for further refinement in the live version elsewhere.
-this is my first game, presumably my last one too, so no promises on "does it work" or "won't it explode my machine"
-most of the time it doesn't work btw, so there's that.
-
+# Bullet Hell
+Bullet Hell is a 2D, 1v1 platformer shooter. The aim of the game is for players to test their skills in a local
+multiplayer environment, where one player uses a keyboard and mouse
+and the other player uses a connected gamepad for control. The game is designed
+in a pixelart style, with all visual elements created by a member of the development team, ensuring a consistent and unique look.
 # Attributions
 - [Bunny83/simpleJSON](https://github.com/Bunny83/SimpleJSON/blob/master/SimpleJSON.cs)
 
