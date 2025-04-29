@@ -1,0 +1,34 @@
+.table-dark .first-place-row{
+    background-color: #998100 !important;
+}
+.table-dark .second-place-row{
+    background-color: #6a6b6c !important;
+}
+.table-dark .third-place-row{
+    background-color: #a46628 !important;
+}
+
+.current-player, .current-player {
+    border: 5px solid #19e724 !important;
+}
+
+.table {
+    font-size: 1.4em;
+    opacity: 0.9;
+}
+
+.leaderboard-table {
+    overflow-x: auto;
+}
+
+body {
+    background-image: url("../src/images/maps/slaughterhouse.png");
+    background-size: 100%;
+    background-position-x: center;
+    transition: 3.3s;
+}
+
+a.disabled {
+    pointer-events: none;
+    filter: brightness(50%);
+}

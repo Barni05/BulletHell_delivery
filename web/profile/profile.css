@@ -1,0 +1,45 @@
+@media (max-width: 400px) {
+    .profile-container {
+        display: block;
+    }
+}
+@media (min-width: 400px) {
+    .profile-container {
+        display: flex;
+    }
+}
+body {
+    font-family: "Pixelmix", sans-serif;
+}
+.profile-container {
+    background-color: var(--dark-bg);
+    color: white;
+}
+.change-pw {
+    max-width: 500px;
+    text-align: center;
+}
+
+.profile-image {
+    width: 500px;
+}
+
+.stat-card {
+    transition: 0.2s;
+    align-content: center;
+}
+
+.stat-card:hover {
+    background-color: var(--light-bg);
+}
+.profile-pic-container {
+    background-color: var(--darker-bg);
+    max-width: 500px;
+}
+.profile-data-container {
+    background-color: var(--dark-bg);
+}
+
+#username {
+    word-wrap: break-word;
+}
