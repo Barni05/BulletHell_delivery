@@ -9,6 +9,10 @@
 .codex-menu-tile:hover {
   filter: grayscale(0%);
 }
+.searchbar-container{
+  background-color: var(--secondary);
+
+}
 
 body {
   text-align: left;
