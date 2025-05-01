@@ -20,8 +20,8 @@ if (!is_logged_in()) {
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/bullet_hell/web/src/php/header.php"); ?>
 
     <div class="container">
-        <h1 class="pixel-font text-center my-3 py-2 bg-dark border border-secondary text-light">LEADERBOARD</h1>
-        <label class="pixel-font" for="page_size">Number of players per page:</label>
+    <h1 class="text-center my-5 font-page-title pixel-font text-white">LEADERBOARD</h1>
+        <label class="pixel-font font-normal" for="page_size">Number of players per page:</label>
         <select class="pixel-font" name="page_size" id="page_size">
             <?php
                 foreach($GLOBALS["page_sizes"] as $size) {
@@ -34,17 +34,17 @@ if (!is_logged_in()) {
             ?>
         </select>
         <div class="leaderboard-table">
-            <table class="table table-dark pixel-font my-2">
+            <table class="table pixel-font my-2">
                 <thead class="thead">
-                    <tr>
-                        <th scope="col">Rank</th>
-                        <th scope="col">Username</th>
-                        <th scope="col"></th>
-                        <th scope="col">Points</th>
-                        <th scope="col">Winrate</th>
-                        <th scope="col">Games played</th>
-                        <th scope="col">Kills</th>
-                        <th scope="col">Deaths</th>
+                    <tr >
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Rank</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Username</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;"></th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Points</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Winrate</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Games played</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Kills</th>
+                        <th scope="col" class="leaderboard-head font-stats" style="font-weight: 100;">Deaths</th>
                     </tr>
                 </thead>
                 <tbody class="table-contents">
@@ -54,7 +54,7 @@ if (!is_logged_in()) {
                 </tbody>
             </table>
         </div>
-        <div class="bg-dark text-center rounded" id="page-controls">
+        <div class="text-center" id="page-controls">
         </div>
     </div>
 

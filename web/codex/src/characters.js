@@ -48,7 +48,7 @@ function DisplayCharacters() {
   let characterSlides = "";
   characters.forEach((character) => {
     characterSlides += `
-                <div class="character-slide p-0 w-100 position-relative" id="${character.id}">
+                <div class="character-slide p-0 position-relative my-2" id="${character.id}">
                 </div>`;
   });
   $(".character-slides-container").html(characterSlides);
@@ -81,7 +81,7 @@ function DisplayCharacters() {
       let character = GetCharacterById($this.attr("id"));
       let descriptionText = character.description;
       let $description = $(
-        `<p class="description-text">${descriptionText} - <span class="${character.ownership_status == 'Unlocked' ? 'unlocked' : 'locked'}-status">${character.ownership_status}</span></p>`
+        `<p class="description-text font-stats">${descriptionText} - <span class="${character.ownership_status == 'Unlocked' ? 'unlocked' : 'locked'}-status font-stats">${character.ownership_status}</span></p>`
       );
       $this.append($description);
 

@@ -33,11 +33,11 @@ body {
     background-color: var(--light-bg);
 }
 .profile-pic-container {
-    background-color: var(--darker-bg);
+    background-color: var(--accent2);
     max-width: 500px;
 }
 .profile-data-container {
-    background-color: var(--dark-bg);
+    background-color: var(--secondary);
 }
 
 #username {

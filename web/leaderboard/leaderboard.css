@@ -1,28 +1,40 @@
-.table-dark .first-place-row{
-    background-color: #998100 !important;
+ .first-place-row{
+    background-color: rgba(125, 125, 125, 0.9) !important;
 }
-.table-dark .second-place-row{
-    background-color: #6a6b6c !important;
+ .second-place-row{
+    background-color: rgba(100,100,100, 0.8) !important;
 }
-.table-dark .third-place-row{
-    background-color: #a46628 !important;
+.third-place-row{
+    background-color: rgba(80,80,80, 0.8) !important;
 }
 
 .current-player, .current-player {
-    border: 5px solid #19e724 !important;
+    border: 5px solid var(--primary) !important;
 }
 
 .table {
-    font-size: 1.4em;
-    opacity: 0.9;
+    border:none!important;
 }
 
 .leaderboard-table {
     overflow-x: auto;
+    
 }
-
+td{
+    color: var(--accent1)!important;
+    border: none;
+}
+th{
+    border: none;
+}
+.leaderboard-title{
+    background-color: rgba(20,20,20, 0.8);
+}
+.leaderboard-head{
+    background-color: var(--accent1)!important;
+}
 body {
-    background-image: url("../src/images/maps/slaughterhouse.png");
+    background-image: url("../src/images/leaderboards_bg.png");
     background-size: 100%;
     background-position-x: center;
     transition: 3.3s;

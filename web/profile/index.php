@@ -23,7 +23,7 @@ if (!is_logged_in()) {
     <script src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/bullet_hell/web/profile/load_profile_data.js" defer></script>
     <script src="<?php $_SERVER['DOCUMENT_ROOT']; ?>/bullet_hell/web/profile/change_password.js" defer></script>
     <div class="profile-container">
-        <div class="profile-pic-container py-3">
+    <div class="profile-pic-container py-3 d-flex flex-column align-items-center justify-content-center min-vh-100">
             <?php
             $query = "SELECT player_skins.display_image as `display_image` FROM player_skins INNER JOIN players ON players.active_skin_id = player_skins.id WHERE players.username = ?;";
             $stmt = $conn->prepare($query);
@@ -35,69 +35,68 @@ if (!is_logged_in()) {
             }
             ?>
             <div class="row p-5">
-                <hr>
-                <h1 class="text-start fw-1 text-center text-uppercase mb-3" id="username">
+                <h1 class="text-start fw-1 text-center text-uppercase mb-3 font-title" id="username">
                     <?php echo $_SESSION['username']; ?>
                 </h1>
-                <hr>
             </div>
         </div>
-        <div class="container-fluid profile-data-container py-3">
+        <div class="container-fluid profile-data-container">
             <div class="row d-flex">
-                <h1 class="text-center">Stats</h1>
+            <h1 class="text-center my-5 font-page-title">Stats</h1>
                 <hr>
             </div>
             <div class="row d-flex mt-2 ">
                 <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto">
-                    <h3 class="text-center" id="stat-points">-</h3>
-                    <h3 class="text-center">Points</h3>
+                    <h3 class="text-center font-title" id="stat-points">-</h3>
+                    <h3 class="text-center font-stat">Points</h3>
                 </div>
                 <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto">
-                    <h3 class="text-center" id="stat-winrate">-</h3>
-                    <h3 class="text-center">Winrate</h3>
+                    <h3 class="text-center font-title" id="stat-winrate">-</h3>
+                    <h3 class="text-center font-stat">Winrate</h3>
                 </div>
                 <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto">
-                    <h3 class="text-center" id="stat-gamesplayed">-</h3>
-                    <h3 class="text-center">Games Played</h3>
+                    <h3 class="text-center font-title" id="stat-gamesplayed">-</h3>
+                    <h3 class="text-centerfont-stat">Games Played</h3>
                 </div>
             </div>
             <hr>
             <div class="row d-flex justify-contents-center mt-2">
                 <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto">
-                    <h3 class="text-center" id="stat-kills">-</h3>
-                    <h3 class="text-center">Total Kills</h3>
+                    <h3 class="text-center font-title" id="stat-kills">-</h3>
+                    <h3 class="text-center font-stat">Total Kills</h3>
                 </div>
                 <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto">
-                    <h3 class="text-center" id="stat-deaths">-</h3>
-                    <h3 class="text-center">Total Deaths</h3>
+                    <h3 class="text-center font-title" id="stat-deaths">-</h3>
+                    <h3 class="text-center font-stat">Total Deaths</h3>
                 </div>
-                <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto" title="Players's favourite music">
-                    <h3 class="text-center display-5" id="stat-music">No music</h3>
+                <div class="col-lg-3 col-sm-12 p-5 stat-card mx-auto" title="Players's active music kit">
+                    <h3 class="text-center font-title" id="stat-music">No music</h3>
+                    <h3 class="text-center font-stat">Active Kit</h3>
                 </div>
             </div>
             <hr>
             <div class="change-pw container-fluid">
-                <h1 class="mb-5">Change password</h1>
+                <h1 class="mb-3 font-title">Change password</h1>
                 <hr>
-                <h4 class="text-success d-none bg-light" id="password-changed">Password changed successfully!</h4>
+                <h4 class="text-success d-none bg-light font-normal" id="password-changed">Password changed successfully!</h4>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 mb-3">
                         <div class="mb-3">
-                            <label for="current-pw" class="form-label">Current Password</label>
-                            <input type="password" class="form-control credential-input" id="current-pw"
+                            <label for="current-pw " class="form-label font-normal">Current Password</label>
+                            <input type="password" class="form-control credential-input font-normal" id="current-pw"
                                 aria-describedby="emailHelp">
                             <p class="text-danger d-none" id="incorrect-password">Incorrect password!</p>
                         </div>
                         <div class="mb-3">
-                            <label for="new-pw" class="form-label">New Password</label>
+                            <label for="new-pw" class="form-label font-normal">New Password</label>
                             <input type="password" class="form-control credential-input" id="new-pw">
                         </div>
                         <div class="mb-3">
-                            <label for="new-pw-again" class="form-label">Repeat New Password</label>
+                            <label for="new-pw-again" class="form-label font-normal">Repeat New Password</label>
                             <input type="password" class="form-control credential-input" id="new-pw-again">
                             <p class="text-danger d-none" id="password-mismatch">Passwords do not match!</p>
                         </div>
-                        <button type="submit" class="btn btn-secondary" id="credential-submit-button"
+                        <button type="submit" class="btn btn-secondary font-normal" id="credential-submit-button"
                             onclick="changePassword()">Change</button>
 
                     </div>

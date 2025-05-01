@@ -59,8 +59,8 @@ function DisplayMaps(maps) {
         <div class="carousel-item ${index === 0 ? 'active' : ''}">
                 <img src="../src/images/maps/${map.map_file_name}" alt="${map.name}">
                 <div class="description-label">
-                    <h1>${map.name}</h1>
-                    <p>${map.map_description}</p>
+                    <h1 class="font-title">${map.name}</h1>
+                    <p class="font-normal">${map.map_description}</p>
                 </div>
             </div>
         `;

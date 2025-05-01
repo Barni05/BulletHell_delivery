@@ -139,13 +139,13 @@ function DisplayHeroWeapon() {
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-sm-12 my-5">
-                            <h2>${heroWeapon.name}</h2>
+                            <h2 class="font-title">${heroWeapon.name}</h2>
                             <ul>
-                                <li>Damage: ${heroWeapon.damage}</li>
-                                <li>Fire rate: ${heroWeapon.fire_rate}</li>
-                                <li>Semi auto: ${heroWeapon.semi_auto}</li>
-                                <li>Rarity: ${heroWeapon.rarity}</li>
-                                <li>Projectile speed: ${heroWeapon.projectile_speed === null
+                                <li class="font-normal">Damage: ${heroWeapon.damage}</li>
+                                <li class="font-normal">Fire rate: ${heroWeapon.fire_rate}</li>
+                                <li class="font-normal">Semi auto: ${heroWeapon.semi_auto}</li>
+                                <li class="font-normal">Rarity: ${heroWeapon.rarity}</li>
+                                <li class="font-normal">Projectile speed: ${heroWeapon.projectile_speed === null
             ? "-"
             : heroWeapon.projectile_speed
         }</li>
@@ -161,7 +161,7 @@ function DisplayHeroWeapon() {
         }" class="d-block mx-auto img-fluid anti-alias hero-image" alt="">
                         </div>
                         <div class="col-lg-4 col-sm-12 my-5">
-                            <p>${heroWeapon.description}</p>
+                            <p class="font-normal">${heroWeapon.description}</p>
                         </div>
                     </div>
                 </div>

@@ -139,12 +139,12 @@ function GetLeaderboardData() {
             next_page = page + 1;
         }
 
-        pagecontrols += `<a class="h-100 text-decoration-none${previous_page == null ? " disabled" : ""}" href="${window.location.pathname}?p=${previous_page}">
-            <img src="../src/images/ui/carousel-prev-icon.png" alt="" class="img-fluid anti-alias">
+        pagecontrols += `<a class="h-100 text-decoration-none${previous_page == null ? " " : ""}" href="${window.location.pathname}?p=${previous_page}">
+            <img src="${next_page == null ? "../src/images/ui/prevInactive.png" : "../src/images/ui/prevActive.png"}" alt="" class="img-fluid anti-alias">
         </a>`;
         pagecontrols += `<span class="pixel-font">${page}/${number_of_pages}</span>`;
-        pagecontrols += `<a class="h-100 text-decoration-none${next_page == null ? " disabled" : ""}" href="${window.location.pathname}?p=${next_page}">
-            <img src="../src/images/ui/carousel-next-icon.png" alt="" class="img-fluid anti-alias">
+        pagecontrols += `<a class="h-100 text-decoration-none" href="${window.location.pathname}?p=${next_page}">
+            <img src="${next_page == null ? "../src/images/ui/nextInctive.png" : "../src/images/ui/nextActive.png"}" alt="" class="img-fluid anti-alias">
         </a>`;
         $("#page-controls").html(pagecontrols);
     });

@@ -19,6 +19,7 @@ if (!is_logged_in()) {
     ?>
     <div class="container">
         <div class="mechanics-container">
+        <h1 class="text-center font-page-title">Mechanics</h1>
             <div class="row text-white mx-auto mb-4">
                 <div class="col-12 d-flex flex-column align-items-center">
                     <div class="row yt-video">
@@ -28,9 +29,9 @@ if (!is_logged_in()) {
                             </im>
                         </div>
                     </div>
-                    <div class="text-start w-100">
+                    <div class="text-start about-game-section mx-auto">
                         <div class="col-12">
-                            <h2>Movement</h2>
+                            <h2 class="font-title">Movement</h2>
                             <p>You can move left and right, and jump. The characters can be controlled with a keyboard and mouse,
                                 or a game controller.</p>
                         </div>
@@ -48,7 +49,7 @@ if (!is_logged_in()) {
                             </im>
                         </div>
                     </div>
-                    <div class="text-start w-100">
+                    <div class="text-start about-game-section mx-auto">
                         <div class="col-12">
                             <h2>Ladders</h2>
                             <p>There are ladders on the maps. You can climb them by going up to them and pressing the key assigned
@@ -68,7 +69,7 @@ if (!is_logged_in()) {
                             </im>
                         </div>
                     </div>
-                    <div class="text-start w-100">
+                    <div class="text-start about-game-section mx-auto">
                         <div class="col-12">
                             <h2>Acquiring weapons</h2>
                             <p>Various weapons are scattered across the maps. You can pick them up by hitting the assigned button.
@@ -89,7 +90,7 @@ if (!is_logged_in()) {
                             </im>
                         </div>
                     </div>
-                    <div class="text-start w-100">
+                    <div class="text-start about-game-section mx-auto">
                         <div class="col-12">
                             <h2>Aiming</h2>
                             <p>Aim you weapon of choice using the mouse or the secondary joystick on your controller. And towards your enemy.</p>
@@ -108,7 +109,7 @@ if (!is_logged_in()) {
                             </im>
                         </div>
                     </div>
-                    <div class="text-start w-100">
+                    <div class="text-start about-game-section mx-auto">
                         <div class="col-12">
                             <h2>Attacking</h2>
                             <p>Fire you gun, swing your sword, stab with your knife, or otherwise try to kill your opponent by getting them

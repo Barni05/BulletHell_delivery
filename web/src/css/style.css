@@ -4,19 +4,35 @@
     --darker-bg:#282c2f;
     --header-bg: #171b2e;
     --font-light: rgb(212, 205, 205);
+    --primary: #ff4040;
+    --secondary: rgb(10,10,10);
+    --accent1: #fff;
+    --accent2: rgb(20,20,20);
+}
+.font-normal{
+    font-size: 15px;
+}
+.font-page-title{
+    font-size: 5rem;
+}
+.font-title{
+    font-size: 3rem;
+}
+.font-stats{
+    font-size: 1.5rem;
 }
 html{
     scroll-behavior:smooth;
 }
 body{
-    background-color: var(--dark-bg)!important;
+    background-color: var(--accent2)!important;
     color: var(--font-light);
 }
 table tr:nth-child(2n+1){
-    background-color: var(--dark-bg) !important;
+    background-color: var(--accent2) !important;
 }
 table tr:nth-child(2n){
-    background-color: var(--darker-bg) !important;
+    background-color: var(--secondary) !important;
 }
 tr td {
     background-color: inherit !important;
@@ -25,6 +41,14 @@ tr td {
 * {
     border-radius: 0 !important;
 }
+
+.about-game-section{
+    width: 55rem;
+}
+.bullet-hell-title{
+    font-size: 50px;
+}
+
 
 input, select, input::placeholder, textarea, textarea::placeholder {
     background-color: var(--darker-bg) !important;
@@ -54,7 +78,7 @@ input, select, input::placeholder, textarea, textarea::placeholder {
 }
 
 .bg-custom {
-    background-color: var(--header-bg);
+    background-color: var(--primary)!important;
 }
 .pixel-font{
     font-family: 'Pixelmix', sans-serif;
@@ -65,8 +89,6 @@ input, select, input::placeholder, textarea, textarea::placeholder {
     transition: 0.3s;
     text-decoration: none;
     font-weight: bold;
-    font-variant: small-caps;
-    letter-spacing: 5px;
 }
 
 .credential-submit-button:hover {
@@ -114,7 +136,6 @@ input, select, input::placeholder, textarea, textarea::placeholder {
     -ms-interpolation-mode: nearest-neighbor; /* IE8+                           */
 }
 
-
 /*Main page design*/
 .fade-in{
     animation: fadeIn 2s forwards;
@@ -127,8 +148,10 @@ input, select, input::placeholder, textarea, textarea::placeholder {
 }
 
 .hero-content{
-    background-color: var(--darker-bg);
+    background-color: var(--secondary);
 }
 .yt-video{
     margin-bottom: 200px;
 }
+
+

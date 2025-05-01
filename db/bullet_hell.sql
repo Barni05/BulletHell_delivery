@@ -1696,12 +1696,12 @@ CREATE TABLE `player_skins` (
 --
 
 INSERT INTO `player_skins` (`id`, `name`, `display_image`, `background_image`, `description`) VALUES
-(1, 'knight', 'knight.png', 'knight_bg.png', 'The most common soldier'),
-(2, 'rogue', 'rogue.png', 'rogue_bg.png', 'Beheaded his own master. Imagine what he can do to you...'),
-(3, 'samurai', 'samurai.png', 'samurai_bg.png', 'Bound by loyalty, but not by law. Beware!'),
+(1, 'bull', 'bull.png', 'bull_bg.png', 'Tormented by visions of the slaughterhouse, the one bull broken free now wields a weapon in one hand, vengeance in the other.'),
+(2, 'butcher', 'butcher.png', 'butcher_bg.png', 'Once a surgeon of the flesh, the Butcher now harvests screams, cleaving through flesh with chilling precision. The past, forever stained red.'),
+(3, 'knight', 'knight.png', 'knight_bg.png', 'The most common soldier'),
 (4, 'entity', 'entity.png', 'entity_bg.png', 'Zero identity, defined only by its boundaries.'),
-(5, 'butcher', 'butcher.png', 'butcher_bg.png', 'Once a surgeon of the flesh, the Butcher now harvests screams, cleaving through flesh with chilling precision. The past, forever stained red.'),
-(9, 'bull', 'bull.png', 'bull_bg.png', 'Tormented by visions of the slaughterhouse, the one bull broken free now wields a weapon in one hand, vengeance in the other.');
+(5, 'rogue', 'rogue.png', 'rogue_bg.png', 'Beheaded his own master. Imagine what he can do to you...'),
+(6, 'samurai', 'samurai.png', 'samurai_bg.png', 'Bound by loyalty, but not by law. Beware!');
 
 -- --------------------------------------------------------
 
