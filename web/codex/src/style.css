@@ -1,14 +1,6 @@
 @import url("../../src/css/style.css");
 
-.codex-menu-tile {
-  margin: 0px;
-  border: 4px solid var(--accent2);
-  filter: grayscale(100%);
-}
 
-.codex-menu-tile:hover {
-  filter: grayscale(0%);
-}
 .searchbar-container{
   background-color: var(--secondary);
 
@@ -53,6 +45,11 @@ body {
 .music-container{
   background-color: var(--secondary);
 }
+.codex-menu-tile {
+  margin: 0px;
+  border: 4px solid var(--accent2);
+  filter: grayscale(0%);
+}
 
 @media screen and (min-width: 992px) {
   .codex-wrapper {
@@ -63,6 +60,15 @@ body {
     grid-template-columns: repeat(16, 1fr);
     grid-template-rows: repeat(7, 1fr);
     margin: auto;
+  }
+  .codex-menu-tile {
+    margin: 0px;
+    border: 4px solid var(--accent2);
+    filter: grayscale(100%);
+  }
+  
+  .codex-menu-tile:hover {
+    filter: grayscale(0%);
   }
   .codex-header{
     background-color: rgba(0, 0, 0, 0.4);
@@ -124,20 +130,27 @@ body {
     height: 150px;
     padding: 20px;
   }
-
+  .codex-menu-tile {
+    margin: 0px;
+    border: 4px solid var(--accent2);
+    filter: grayscale(0%);
+  }
   #maps-tile {
-    background-image: url("../../src/images/wallpaper_test.png");
+    background-image: url("../../src/images/codex/maps.png");
     background-size: cover;
+    color: var(--accent2);
   }
 
   #weapons-tile {
-    background-image: url("../../src/images/wallpaper_test.png");
+    background-image: url("../../src/images/codex/weapons.png");
     background-size: cover;
+    color: var(--accent1);
   }
 
   #music-tile {
-    background-image: url("../../src/images/wallpaper_test.png");
+    background-image: url("../../src/images/codex/music.png");
     background-size: cover;
+    color: var(--accent1);
   }
 
   #music-tile>h1 {
@@ -153,13 +166,17 @@ body {
   }
 
   #mechanics-tile {
-    background-image: url("../../src/images/wallpaper_test.png");
+    background-image: url("../../src/images/codex/mechanics.png");
     background-size: cover;
+    color: var(--accent1);
+
   }
 
   #characters-tile {
-    background-image: url("../../src/images/wallpaper_test.png");
+    background-image: url("../../src/images/codex/characters.png");
     background-size: cover;
+    color: var(--accent1);
+
   }
 }
 
