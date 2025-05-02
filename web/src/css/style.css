@@ -13,7 +13,7 @@
     font-size: 15px;
 }
 .font-page-title{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 .font-title{
     font-size: 3rem;
@@ -21,6 +21,11 @@
 .font-stats{
     font-size: 1.5rem;
 }
+@media (min-width: 992px) {
+    .font-page-title {
+      font-size: 5rem; 
+    }
+  }
 html{
     scroll-behavior:smooth;
 }
@@ -155,3 +160,33 @@ input, select, input::placeholder, textarea, textarea::placeholder {
 }
 
 
+/* video responsiveness */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+  }
+  
+  .hero-content img {
+      max-width: 50%; 
+      height: auto; 
+  }
+  
+  .about-game-section {
+      width: 90%;
+  }
+  
+  @media (min-width: 768px) { 
+      .about-game-section {
+          width: 75%; 
+      }
+  }
+  
+  @media (min-width: 992px) { 
+      .about-game-section {
+          width: 60%; 
+      }
+       .hero-content .row:nth-child(2) .about-game-section { 
+           width: 50%;
+       }
+  }
