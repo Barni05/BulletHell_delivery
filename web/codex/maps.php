@@ -26,10 +26,10 @@ if (!is_logged_in()) {
             </div>
 
             <button id="prevBtn" class="carousel-control-prev" type="button">
-                <img src="../src/images/ui/carousel-prev-icon.png" alt="Previous">
+                <img src="../src/images/ui/prevActive.png" alt="Previous">
             </button>
             <button id="nextBtn" class="carousel-control-next" type="button">
-                <img src="../src/images/ui/carousel-next-icon.png" alt="Next">
+                <img src="../src/images/ui/nextActive.png" alt="Next">
             </button>
         </div>
     </div>
